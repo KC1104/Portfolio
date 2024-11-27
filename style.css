@@ -1,531 +1,167 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="landing">
+    <div class="main">
+        <div class="navbar">
+            <div class="name"><span>K</span>ushagra Chandra</div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <img src="WhatsApp Image 2024-10-18 at 11.11.39 PM-modified.png" class="logo">
+            <h1>Hi, I'm Kushagra</h1>
+            <h3>A student</h3>
+            <h3>Studying in Srm University</h3>
+        </div>
+    </section>
+    <section id="about">
+        <br><br>
+            <p class="text">Get to know more</p>
+            <div class="title">About Me </div>
+            <div class="about-pic">
+                <img src="WhatsApp Image 2024-04-13 at 8.17.03 AM.jpeg">
+            </div>
+            <div class="about-logo">
+                <img src="about logo 3.jpg">
+            </div>
+            <div class="content">I am a student 
+                pursuing B.Tech in Computer Science and Engineering (CSE) at SRM Institute of Science and Technology, KTR. 
+                My passion for technology drives my interest in coding, where I enjoy solving problems and creating innovative solutions. 
+                Outside of academics, I have a love for sports, especially volleyball, which keeps me active and allows me to work collaboratively with my teammates.
+                 Balancing my studies with my interests, I strive to excel both in my coursework and on the court. </div>
+            <div class="interests"> 
+                <h3>Interests</h3>
+                <ol>
+                    <li>Love Programming</li>
+                    <li>Making Webpages</li>
+                    <li>Volleyball and Cricket</li>
+                </ol>
+            </div>
+            <img src="down arrow.png" class="arrow" onclick="location.href='./portfolio.html#skills'">
+    </section>
+    <section id="skills">
+        <br><br>
+        <p class="text">Explore My</p>
+        <div class="title">Skills</div>
 
-.main{
-    width: 100%;
-    background: url(bg2.webp);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    font-family: sans-serif;
-}
-.navbar{
-    width: 86%;
-    display: flex;
-    margin: auto;
-    padding: 15px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-.name{
-    color: azure;
-    font-family: "Poppins",sans-serif;
-}
-.name:hover{
-    cursor: default;
-}
-.name span{
-    color: red;
-}
+        <div class="skiils-container">
+            <div class="pl">
+                <br>
+                <h3 style="color: whitesmoke;"><span>Programming</span> Languages</h3>
+                <br> Basic Knowledge of<br>
+                <ol><li>Python, C, Java</li>
+                <li>MySQL and HTML</li>
+            </ol>
+            <img src="python.jpg" class="python">
+            <img src="html.jpg" class="python">
+            <img src="c logo.png" class="python">
+            </div>
 
-ul{
-    margin-top: 1%;
-    margin-left: 22%;
-    
-}
+            <div class="ps">
+                <br>
+                <h3 style="text-align: center;color: whitesmoke;">Problem <span>Solving</span></h3>
+                <ol style="text-align: left;">
+                    <li>Developed analytical skills through various coding projects and exercises.</li>
+                    <li>Efficiently break down complex problems into manageable parts.</li>
+                    <li>Continuously improve by learning from mistakes and seeking out new knowledge.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="skills-container2">
+            <div class="wd">
+                <br>
+                <h3 style="text-align: center;color: whitesmoke;">Web <span>Development</span></h3>
+                <ol style="text-align: left;">
+                    <li>Gained hands-on experience with HTML to create basic web pages.</li>
+                    <li>Built simple web interfaces, focusing on layout and structure.</li>
+                    <li>Able to manipulate colors, fonts, and layouts using CSS properties.</li>
+                    <li>Continuously exploring more advanced web development skills, like JavaScript, to enhance interactive and dynamic web experiences.</li>
+                </ol>
+            </div>
 
-ul li{
-     list-style: none;
-     display: inline-block;
-     padding: 10px 15px;
-}
+            <div class="cb">
+                <br>
+                <h3 style="text-align: center;color: whitesmoke;"><span>Coding</span> Basic</h3>
+                <ol style="text-align: left;line-height: 20px;">
+                    <li>Solid understanding of fundamental programming concepts </li>
+                    <li>Ability to write and debug simple programs in Python and C, handling tasks like data manipulation and basic algorithms.</li>
+                    <li>Proficient in HTML for web development, understanding how to structure and format web content.</li>
+                    <li>Understanding of basic error handling and debugging techniques to solve issues efficiently.</li>
+                </ol>
+            </div>
+        </div>
+        <img src="down arrow.png" class="arrow-skill" onclick="location.href='./portfolio.html#projects'">
+    </section>
+    <section id="projects">
+        <br>
+        <p class="text">Browse my recent</p>
+        <div class="title">Projects </div>
+        <div class="projects">
+            <div class="project1">
+                <div class="txt"><img src="text editor screenshot.png" class="txt"></div>
+                <div class="para">
+                <p>Created a simple Notepad app with a user-friendly interface using Python's Tkinter module.
+                     Features include new file creation, opening, saving, and basic text editing. 
+                     The app uses menu options for file operations and an editable text area</p>
+                </div>
+            </div>
+            <div class="project2">
+                <div class="txt"><img src="library management .png" class="lbms" ></div>
+                <div class="para">
+                <p>Developed a Library Management App using Python’s Tkinter module to create an interactive GUI.
+                     Features include adding, deleting, searching for books and tracking book returns, managing 
+                     member details. The app provides seamless navigation through menu options and uses Tkinter’s
+                      widgets for a polished interface. </p>
+                </div>
+            </div>
+        </div>
 
-ul li a{
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: whitesmoke;
-    margin-top: -3%;
-}
-
-ul li a:hover{
-    color: rgb(230, 104, 59);
-}
-
-.info{
-    color: rgb(180, 206, 228);
-    margin-left: 15%;
-}
-.logo{
-    width: 220px;
-    cursor: pointer;
-    margin-top: 10%;
-}
-.info h1{
-    margin-top: -17%;
-    font-size: 35px;
-    margin-left: 5%;
-    text-align: center;
-}
-.info h3{
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    margin-left: 5%;
-    text-align: center;
-}
-
-#about{
-    height: 500px;
-   background: url(about\ b3.jpg);
-   background-size: 100%;
-}
-.about-pic{
-    display: flex;
-    height: 220px;
-    margin-left: 12%;
-    margin-top: 3%;
-}
-.text,.title{
-    text-align: center;
-    color: whitesmoke;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 1rem;
-}
-.title{
-    color: whitesmoke;
-    font-size: 2.5rem;
-    text-align: center;
-}
-.about-logo{
-    display: flex;
-    height: 30px;
-    margin-top: -21%;
-    margin-left: 32%;
-}
-.content{
-    color: darkgray;
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 1px;
-    line-height: 24px;
-    margin-top: 1%;
-    margin-left: 29%;
-    margin-right: 6.5%;
-    text-align: justify;
-}
-.interests{
-    color: whitesmoke;
-    margin-left: 31%;
-    margin-top: 1%;
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-ol{
-    padding: 5px;
-}
-ol li{
-    list-style: none;
-    padding: 8px;
-}
-.arrow{
-    display: flex;
-    height: 40px;
-    margin-left: 90%;
-    margin-top: -2rem;
-}
-#skills{
-    background: url(background.jpg);
-    height: 500px;
-    background-size: 100%;
-}
-.skills-container{
-    display: flex;
-}
-.pl{
-    border-width: 2px;
-    font-size: 12px;
-    font-family: "Poppins",sans-serif;
-    border-color: white;
-    border-style: solid;
-    border-width: 1.5px;
-    border-radius: 10px;
-    text-align: justify;
-    width: 300px;
-    height: 150px;
-    text-align: center;
-    color: rgb(108, 215, 179);
-    margin-left: 18%;
-    margin-top: 1%;
-}
-.ps{
-    border-width: 2px;
-    font-size: 12px;
-    font-family: "Poppins",sans-serif;
-    width: 300px;
-    text-align: justify;
-    border-color: white;
-    border-style: solid;
-    border-width: 1.5px;
-    border-radius: 10px;
-    color: rgb(180, 206, 228);;
-    margin-top: -15.25%;
-    margin-left: 52%;
-}
-.wd{
-    border-width: 2px;
-    font-size: 12px;
-    font-family: "Poppins",sans-serif;
-    border-color: white;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 1.5px;
-    width: 300px;
-    height: 210px;
-    text-align: justify;
-    color: rgb(180, 206, 228);  
-    margin-left: 18%;
-    margin-top: 2%; 
-}
-.cb{
-    border-width: 2px;
-    font-size: 12px;
-    font-family: "Poppins",sans-serif;
-    width: 300px;
-    height: 210px;
-    text-align: justify;
-    border-color: white;
-    border-style: solid;
-    border-width: 1.5px;
-    border-radius: 10px;
-    color: rgb(108, 215, 179);
-    margin-top: -21%;
-    margin-left: 52%;
-}
-.pl span{
-    color: rgb(108, 215, 179);
-}
-.ps span{
-    color: rgb(108, 215, 179);
-}
-.wd span{
-    color: rgb(108, 215, 179);
-}
-
-.cb span{
-    color: rgb(108, 215, 179);
-}
-.python{
-    height: 35px;
-    padding: 0 10px;
-}
-.pl,.ps,.wd,.cb:hover{
-    cursor: pointer;
-}
-.arrow-skill{
-    display: flex;
-    height: 40px;
-    margin-left: 90%;
-    margin-top: -4%;
-}
-
-#projects{
-    height: 490px;
-    background: url(projects\ b3.jpg);
-    background-size: 100%;
-}
-.projects{
-    display: flex;
-}
-.project1{
-    width: 380px;
-    margin-left: 10%;
-    margin-top: 2%;
-
-}
-.project2{
-    width: 380px;
-    margin-top: 2%;
-    margin-left: 5%;
-}
-.txt{
-    margin: auto auto;
-}
-.txt img{
-    width: 400px;
-}
-.lbms{
-    height: 214px;
-}
-.para{
-    color: aliceblue;
-    margin-top: 2%;
-    font-size: 13px;
-    text-align: center;
-}
-.glink{
-    margin-top: 2%;
-    margin-left: 40%;
-}
-.glink p{
-    color: aliceblue;
-}
-.btn{
-    position: relative;
-    margin-left: 1%;
-    display: inline-block;
-    padding: 15px 30px;
-    color: #2196f3;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 24px;
-    overflow: hidden;
-    transition: 0.2s;
-}
-.btn:hover{
-    color: #fff;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,
-    0 0 80px #2196f3;
-    transition-delay: 1s;
-}
-.btn span:nth-child(1){
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#2196f3);
-}
-.btn:hover span:nth-child(1){
-    left: 100%;
-    transition: 1s;
-}
-.btn span:nth-child(3){
-    position: absolute;
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#2196f3);
-}
-.btn:hover span:nth-child(3){
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-.btn span:nth-child(2){
-    position: absolute;
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#2196f3);
-}
-.btn:hover span:nth-child(2){
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-.btn span:nth-child(4){
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#2196f3);
-}
-.btn:hover span:nth-child(4){
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
-}
-#contacts{
-    background: url(contact\ bg.webp);
-    height: 120px;
-    background-size: 100%;
-}
-.links a{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    width: 200px;
-    height: 60px;
-    margin-top: 6%;
-    margin-left: 20%;
-    line-height: 60px;
-    text-align: center;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform-origin: center center;
-}
-.links span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-align: center;
-    background: rgba(255, 255, 255, .05);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    border-radius: 30px;
-    color: #fff;
-    transition: 1s;
-}
-span.front{
-    transform: rotateX(0deg) translateZ(20px);
-}
-.links a:hover span.front{
-    transform: rotateX(-180deg) translate(20px);
-}
-span.back{
-    transform: rotateX(-180deg) translateZ(20px);
-}
-.links a:hover span.back{
-    transform: rotateX(0deg) translateZ(20px);
-}
-span.center{
-    position: relative;
-    background: linear-gradient(#c31a5b,#7129bd);
-}
-span.center::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left,#ffdd1f,#c31a5b);
-    border-radius: 30px;
-    transform: translateZ(-1px);
-}
-.link a:hover span.center{
-    transform: rotateX(-180deg);
-}
-
-
-.LinkedIn a{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    width: 200px;
-    height: 60px;
-    margin-top: 6%;
-    margin-left: 50%;
-    line-height: 60px;
-    text-align: center;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform-origin: center center;
-}
-.LinkedIn span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-align: center;
-    background: rgba(255, 255, 255, .05);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    border-radius: 30px;
-    color: #fff;
-    transition: 1s;
-}
-span.front{
-    transform: rotateX(0deg) translateZ(20px);
-}
-.LinkedIn a:hover span.front{
-    transform: rotateX(-180deg) translate(20px);
-}
-span.back{
-    transform: rotateX(-180deg) translateZ(20px);
-}
-.LinkedIn a:hover span.back{
-    transform: rotateX(0deg) translateZ(20px);
-}
-span.center{
-    position: relative;
-    background: linear-gradient(#c31a5b,#7129bd);
-}
-span.center::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left,#ffdd1f,#c31a5b);
-    border-radius: 30px;
-    transform: translateZ(-1px);
-}
-.LinkedIn a:hover span.center{
-    transform: rotateX(-180deg);
-}
-
-.insta a{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    width: 200px;
-    height: 60px;
-    margin-top: 6%;
-    margin-left: 80%;
-    line-height: 60px;
-    text-align: center;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform-origin: center center;
-}
-.insta span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-align: center;
-    background: rgba(255, 255, 255, .05);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    border-radius: 30px;
-    color: #fff;
-    transition: 1s;
-}
-span.front{
-    transform: rotateX(0deg) translateZ(20px);
-}
-.insta a:hover span.front{
-    transform: rotateX(-180deg) translate(20px);
-}
-span.back{
-    transform: rotateX(-180deg) translateZ(20px);
-}
-.insta a:hover span.back{
-    transform: rotateX(0deg) translateZ(20px);
-}
-span.center{
-    position: relative;
-    background: linear-gradient(#c31a5b,#7129bd);
-}
-span.center::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left,#ffdd1f,#c31a5b);
-    border-radius: 30px;
-    transform: translateZ(-1px);
-}
-.insta a:hover span.center{
-    transform: rotateX(-180deg);
-}
-html{
-    scroll-behavior: smooth;
-}
+        <div class="glink">
+            <p>See more of my projects at </p>
+            <a href="https://github.com/KC1104/My-Projects" class="btn" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                GitHub
+                </a>
+        </div>
+    </section>
+    <section id="contacts">
+        <br><br>
+        <p class="title">Contacts</p>
+        <div class="links">
+            <a>
+            <span class="front">Phone No.</span>
+            <span class="center"></span>
+            <span class="back">9971015802</span>
+        </a>
+        </div>
+        <div class="LinkedIn">
+        <a href="https://www.linkedin.com/in/kushagra-chandra-836a2132b/" target="_blank" style="color: aliceblue;">
+            <span class="front">LinkedIn</span>
+            <span class="center"></span>
+            <span class="back">Click to View</span>
+        </a>
+    </div>
+    <div class="insta">
+        <a href="https://www.instagram.com/kushagra.1104/?hl=en" target="_blank" style="color: aliceblue;">
+            <span class="front">Instagram</span>
+            <span class="center"></span>
+            <span class="back">kushagra.1104</span>
+        </a>
+    </div>
+    </section>
+</body>
+</html>
