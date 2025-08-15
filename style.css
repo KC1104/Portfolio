@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+        overflow-x: hidden;
+
+}
+
+body {
+    /*background: url(bg2.webp) no-repeat;
+    background-attachment: fixed;*/
+    background: url(bg4.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.span-color{
+    color: #0ef;
+}
+.home {
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 20px;
+    font-size: 25px;
+    background: transparent;
+    color: white;
+    position: fixed;
+    top: -8px;
+    width: 93%;
+    background: rgba(255, 255, 255, .15);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    font-family: "Mozilla Headline", sans-serif;
+    font-size: 28px;
+    padding: 10px 30px;
+    height: 40px;
+}
+
+
+
+#name {
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-weight: 500;
+}
+nav a.active {
+    color: #0ef;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+nav a:hover {
+    color: #0ef;
+    transform: scale(1.5);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+
+.home-content {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 70vh;
+    margin: 0px 60px;
+    position: relative;
+    top: 120px;
+}
+
+.intro {
+    margin-top: 55px;
+}
+
+.intro h3 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.intro h3 span {
+    color: #0ef;
+}
+
+.intro h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.social-links {
+    margin: 20px -10px;
+}
+
+.social-links a {
+    display: inline-flex;
+    margin: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #0ef;
+    color: #000;
+    transform: scale(1.5);
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 10px 0px;
+}
+
+.btn-box:hover {
+    background: transparent;
+    color: #0ef;
+}
+
+.image img {
+    position: relative;
+    right: 100px;
+    top: 20px;
+    height: 450px;
+    /* adjust as needed */
+    width: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    background: linear-gradient(45deg, #00f0ff, #8a2be2, #ff0080) border-box;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.7),
+        0 0 40px rgba(138, 43, 226, 0.7),
+        0 0 60px rgba(255, 0, 128, 0.7);
+}
+
+
+#about {
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px 220px;
+    gap: 120px;
+}
+
+.about-img img {
+    height: 400px;
+    position: relative;
+    top: 67px;
+}
+
+.about-content {
+    width: 750px;
+}
+
+.about-content h2 {
+    position: relative;
+    top: -60px;
+    left: 30px;
+    font-size: 50px;
+}
+
+.about-content h2 span {
+    color: #0ef;
+}
+
+.about-content p {
+    font-size: 21px;
+    position: relative;
+    top: 10px;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-content .btn-box{
+    position: relative;
+    top: 40px;
+}
+#skills {
+    color: white;
+    min-height: 100vh;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.skills-container {
+    width: 45%;
+    height: 500px;
+    padding: 75px 90px;
+    position: relative;
+    top: 70px;
+}
+
+#skills h2 {
+    font-size: 50px;
+    position: relative;
+    left: 42%;
+    top: 110px;
+    margin-top: 40px;
+}
+
+.sub-heading {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.bar {
+    font-size: 22px;
+    margin: 15px;
+}
+
+.Techincal-bars .bar {
+    margin-top: 40px 0;
+}
+
+.Techincal-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.Techincal-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+.Techincal-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.Techincal-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    /*
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;*/
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 80%;
+}
+
+.progress-line.js span {
+    width: 70%;
+}
+
+.progress-line.python span {
+    width: 80%;
+}
+
+.progress-line.cpp span {
+    width: 60%;
+}
+
+.progress-line.java span {
+    width: 50%;
+}
+
+.progress-line.mysql span {
+    width: 75%;
+}
+
+.progress-line.node span {
+    width: 60%;
+}
+
+.progress-line.express span {
+    width: 50%;
+}
+
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after {
+    content: "90";
+}
+
+.progress-line.css span::after {
+    content: "80";
+}
+
+.progress-line.js span::after {
+    content: "70";
+}
+
+.progress-line.python span::after {
+    content: "80";
+}
+
+.progress-line.cpp span::after {
+    content: "60";
+}
+
+.progress-line.java span::after {
+    content: "50";
+}
+
+.progress-line.mysql span::after {
+    content: "75";
+}
+
+.progress-line.node span::after {
+    content: "60";
+}
+
+.progress-line.express span::after {
+    content: "50";
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.radial-bars {
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    position: relative;
+    left: 150px;
+}
+
+.radial-bars .radial-bar {
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.radial-bars .radial-bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+.path {
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+/*
+.path-1 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-2 {
+    animation: animate-path2 1s 1s linear forwards;
+}
+
+.path-3 {
+    animation: animate-path3 1s 1s linear forwards;
+}
+
+.path-4 {
+    animation: animate-path4 1s 1s linear forwards;
+}
+
+.path-5 {
+    animation: animate-path5 1s 1s linear forwards;
+}
+
+.path-6 {
+    animation: animate-path6 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 100.4;
+    }
+}
+
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 50.2;
+    }
+}
+
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 125.5;
+    }
+}
+
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 150.6;
+    }
+}
+
+@keyframes animate-path5 {
+    100% {
+        stroke-dashoffset: 175.7;
+    }
+}
+
+@keyframes animate-path6 {
+    100% {
+        stroke-dashoffset: 140.56;
+    }
+}
+*/
+.radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.radial-bar .text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    #skills {
+        flex-wrap: wrap;
+        /* stack on small screens */
+    }
+}
+
+#projects{
+    height: 100vh;
+    margin-top: 250px;
+    color: white;
+}
+#projects h2{
+    font-size: 50px;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+.project-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    position: relative;
+    top: 160px;
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0,0,0.1),#0ef);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 4px;
+    transition: height 0.5s;
+}
+.layer h5{
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.layer p{
+    color: #000;
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+.layer i{
+    color: #ff004f;
+    margin: 20px;
+    font-size: 20px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+}
+
+.row:hover .layer{
+    height: 100%;
+}
+
+footer{
+    height: 40vh;
+    color: white;
+    /*background: linear-gradient(135deg, #001f2f, #000);
+    border-top: 2px solid #0ef;*/
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-content{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.footer-content > div{
+    position: relative;
+    top: -20px;
+}
+.f-heading{
+    font-size: 28px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.footer-content p{
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Poppins";
+    margin-top: 10px;
+
+}
+.f2 ul li{
+    margin: 10px 0px;
+    padding: 0px 35px;
+}
+.f2 ul li a{
+    text-decoration: none;
+    color: #0ef;
+    font-size: 18px;
+    font-family: "Poppins";
+    padding: 0px 5px;
+}
+
+.f2 ul li a:hover{
+    color: white;
+}
+.f3 a{
+    text-decoration: none;
+    color: white;
+}
+.f3 a:hover{
+    text-decoration: underline;
+}
+.ruler{
+    border: 2px solid #0ef;
+    width: 90vw;
+    position: relative;
+    top: -15px;
+    left: 5vw;
+    margin-top: 20px;
+}
+.end-note{
+    color: #0ef;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Poppins";
+    margin-top: 10px;
+    position: relative;
+    top: -15px;
+    font-weight: 500;
+}
